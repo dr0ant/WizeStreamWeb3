@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+
+      <script>
+        // When the user scrolls the page, execute myFunction
+  window.onscroll = function() {myFunction()};
+
+  // Get the navbar
+  var navbar = document.getElementById("navbar");
+
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+      </script>
+      <style>
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+
+
+  nav {
+  
+    margin-right: 0cm;
+    margin-left: 0cm;
+    border-radius: 0px 0px 50px 50px;
+    background: linear-gradient(-45deg, #012030, #000000, #012030, #000000);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+  body {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-color :#1E1E1E
+  /* Change to any font you need */
+  }
+
+
+  nav .nav-items{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+
+  }
+
+  nav .nav-items a {
+    opacity: 1;
+    color: white;
+    margin: 0 25px;
+    padding: 15px;
+    text-decoration: underline;
+    text-shadow: 0.01cm;
+    transition: 0.3s ease-in-out;
+    font-size: 9mm;
+  }
+
+  nav .nav-items a:hover {
+    background-color:white ;
+    border-radius: 30px 30px 30px 30px;
+    opacity: 0.12;
+
+  
+  }
+
+  nav .nav-items .logo {
+    height: 100px;
+    width: auto;
+    margin: 0 25px;
+  }
+
+  .toggle-button{
+    position:absolute;
+    top: 3cm;
+    left: 2cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+  }
+
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: darkslateblue;
+    border-radius: 10px;
+  }
+
+  @media(max-width :1200px) {
+    .toggle-button{
+      display: flex;
+    }
+
+  nav  .nav-items .link{
+  display: none;
+    width: 100%;
+
+    }
+
+    .navbar{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+  nav  .nav-items a {
+      width: 100%;
+      flex-direction: column;
+    }
+
+  .top-items{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    width: 300px;
+  }
+
+
+  .box{
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  }
+
+      </style>
+
+</head>
+
+
+
+<body>
+
+    <!-- HEADER -->
+
+  <nav >
+      <div class="nav-items">
+        <a href="/index.html"> <img class="logo" src="/logos/GREEN_NO_BG_ARTEFACT.png">   </a> 
+        <a class="link" href="index.html">WizeStream</a>
+        <a class="link" href="/Pages/Films.html">Films</a>
+        <a class="link" href="/Pages/Series.html">Serie</a>
+        <a class="link" href="/Pages/Series.html">AMVs</a>
+        <a href="/Pages/account.html"> <img class="logo" src="/logos/GREEN_NO_BG_ARTEFACT.png"></a> 
+      </div>
+  </nav>    
+
+   <!-- END HEADER -->
+
+
+
+
+   <!-- TOP FILMS  SERIES -->
+
+  <div class="box">
+    <div class="top-items">
+      <a href="">A</a>
+      <a href="">B</a>
+      <a href="">C</a>
+      <a href="">D</a>
+    </div>
+  </div>
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis saepe iure voluptas aperiam autem id dolor, minima dolorem esse nesciunt, quaerat necessitatibus perspiciatis, assumenda ut recusandae ea. Non, minus iste!
+
+
+  <div class="box">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus tempora, omnis debitis, illum ab neque quis sit suscipit ipsam explicabo, recusandae repellendus? Adipisci distinctio omnis facilis, culpa debitis voluptas dolore!
+  </div>
+
+  <!-- END TOP FILMS / SERIES -->
+
+
+
+      <iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/mkdyHZ6J#zot1COrNh1rFagvLXWd-eBDqrF9tz_NAOtELutS7RZc" allowfullscreen ></iframe>
+      <video controls="controls">
+          <source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video" />
+      
+
+      
+      
+      
+        </video>
+
+    <!-- mkv -->
+    <video width="320" height="240" controls src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv"></video>
+    <!-- mp4 -->
+      <video width="320" height="240" controls>
+        <source src="assets/animation.mp4" type="video/mp4" />
+      </video>
+
+
+      <video id="video" controls preload="metadata" style="width:80%;height:80%">
+        <source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/mp4">
+        <source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/webm">
+        <track label="language one" kind="subtitles" srclang="en" src="Ehttps://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv/nglish [Forced].srt">
+    </video>
+</body>
+
+</html>
