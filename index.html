@@ -25,7 +25,9 @@
       navbar.classList.remove("sticky");
     }
   }
-      </script>
+</script>
+
+<script src="js/slider.js"></script>
 
 
       <style>
@@ -130,36 +132,72 @@
         display: flex;
       }
 
-    nav  .nav-items .link{
-    display: none;
-      width: 100%;
-
-      }
-
-    .navbar{
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    nav  .nav-items a {
+      nav  .nav-items .link{
+      display: none;
         width: 100%;
+
+        }
+
+      .navbar{
         flex-direction: column;
+        align-items: flex-start;
       }
 
-    .top-items{
-      display: flex;
-      justify-content: space-around;
-      padding: 10px;
-      width: 300px;
-    }
+      nav  .nav-items a {
+          width: 100%;
+          flex-direction: column;
+        }
+
+      .top-items{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        width: 300px;
+      }
+}
+
+.box{
+      width: 1200px;
+      border: white;
+      padding: 50px;
+      margin: 20px;
+      border-radius: 12px;
+      background: linear-gradient(-45deg, #012030, #000000, #012030, #000000);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+    } 
 
 
-    .box{
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-    }
+
+.top-items{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  overflow-x: scroll;
+  
+
+
+}
+
+ .item{
+  padding: 30px;
+
+ }
+  
+
+  .title{
+    color:white;
+    font-size: large;
+    padding-bottom: 20px;
+    padding-top: 50px;
+
   }
+
+  .video{
+    padding: 30px;
+  }
+   
 
       </style>
 
@@ -188,44 +226,63 @@
 
 
    <!-- TOP FILMS  SERIES -->
+<center>
+
+ <div class="title"> TOP CONTENT </div>
 
   <div class="box">
     <div class="top-items">
-      <a href=""><iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/mkdyHZ6J#zot1COrNh1rFagvLXWd-eBDqrF9tz_NAOtELutS7RZc" allowfullscreen ></iframe></a>
-      <a href=""><iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/mkdyHZ6J#zot1COrNh1rFagvLXWd-eBDqrF9tz_NAOtELutS7RZc" allowfullscreen ></iframe></a>
-      <a href=""><iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/mkdyHZ6J#zot1COrNh1rFagvLXWd-eBDqrF9tz_NAOtELutS7RZc" allowfullscreen ></iframe></a>
-      <a href=""><iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/mkdyHZ6J#zot1COrNh1rFagvLXWd-eBDqrF9tz_NAOtELutS7RZc" allowfullscreen ></iframe></a>
+      <a class="item"><iframe width="320" height="180" frameborder="0" src="https://mega.nz/embed/mkdyHZ6J#zot1COrNh1rFagvLXWd-eBDqrF9tz_NAOtELutS7RZc" allowfullscreen ></iframe></a>
+      <a class="item"><iframe width="320" height="180" frameborder="0" src="https://mega.nz/embed/mkdyHZ6J#zot1COrNh1rFagvLXWd-eBDqrF9tz_NAOtELutS7RZc" allowfullscreen ></iframe></a>
+      <a class="item"><iframe width="320" height="180" frameborder="0" src="https://mega.nz/embed/mkdyHZ6J#zot1COrNh1rFagvLXWd-eBDqrF9tz_NAOtELutS7RZc" allowfullscreen ></iframe></a>
+      <a class="item"><iframe width="320" height="180" frameborder="0" src="https://mega.nz/embed/mkdyHZ6J#zot1COrNh1rFagvLXWd-eBDqrF9tz_NAOtELutS7RZc" allowfullscreen ></iframe></a>
+      <a class="item"><iframe width="320" height="180" frameborder="0" src="https://mega.nz/embed/mkdyHZ6J#zot1COrNh1rFagvLXWd-eBDqrF9tz_NAOtELutS7RZc" allowfullscreen ></iframe></a>
+      <a class="item"><iframe width="320" height="180" frameborder="0" src="https://mega.nz/embed/mkdyHZ6J#zot1COrNh1rFagvLXWd-eBDqrF9tz_NAOtELutS7RZc" allowfullscreen ></iframe></a>
+      <a class="item"><iframe width="320" height="180" frameborder="0" src="https://mega.nz/embed/mkdyHZ6J#zot1COrNh1rFagvLXWd-eBDqrF9tz_NAOtELutS7RZc" allowfullscreen ></iframe></a>
     </div>
   </div>
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis saepe iure voluptas aperiam autem id dolor, minima dolorem esse nesciunt, quaerat necessitatibus perspiciatis, assumenda ut recusandae ea. Non, minus iste!
-
-
-  <div class="box">
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus tempora, omnis debitis, illum ab neque quis sit suscipit ipsam explicabo, recusandae repellendus? Adipisci distinctio omnis facilis, culpa debitis voluptas dolore!
-  </div>
-
-  <!-- END TOP FILMS / SERIES -->
+</center>
 
 
 
-      <video controls="controls">
-          <source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video" />
-      </video>
 
-    <!-- mkv -->
-    <video width="320" height="240" controls src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv"></video>
+
+<center>
+
+  <div class="title"> DERNIERS AJOUTS </div>
+ 
+   <div class="box">
+     <div class="top-items">
+      <video class="video" controls="controls" preload="metadata" style="width:50%;height:50%"> <source src="https://wizecosm.freeboxos.fr:59081/share/hOzPfr5kq5-PpQYD/An.Interview.With.God.2018.720p.BluRay.x264-%5BYTS.AM%5D.mp4" type="video/mp4"></video>
+      <video class="video" controls="controls" preload="metadata" style="width:50%;height:50%"> <source src="https://wizecosm.freeboxos.fr:59081/share/hOzPfr5kq5-PpQYD/An.Interview.With.God.2018.720p.BluRay.x264-%5BYTS.AM%5D.mp4" type="video/mp4"></video>
+      <video class="video" controls="controls" preload="metadata" style="width:50%;height:50%"> <source src="https://wizecosm.freeboxos.fr:59081/share/hOzPfr5kq5-PpQYD/An.Interview.With.God.2018.720p.BluRay.x264-%5BYTS.AM%5D.mp4" type="video/mp4"></video>
+      <video class="video" controls="controls" preload="metadata" style="width:50%;height:50%"> <source src="https://wizecosm.freeboxos.fr:59081/share/hOzPfr5kq5-PpQYD/An.Interview.With.God.2018.720p.BluRay.x264-%5BYTS.AM%5D.mp4" type="video/mp4"></video>
+      <video class="video" controls="controls" preload="metadata" style="width:50%;height:50%"> <source src="https://wizecosm.freeboxos.fr:59081/share/hOzPfr5kq5-PpQYD/An.Interview.With.God.2018.720p.BluRay.x264-%5BYTS.AM%5D.mp4" type="video/mp4"></video>
+      <video class="video" controls="controls" preload="metadata" style="width:50%;height:50%"> <source src="https://wizecosm.freeboxos.fr:59081/share/hOzPfr5kq5-PpQYD/An.Interview.With.God.2018.720p.BluRay.x264-%5BYTS.AM%5D.mp4" type="video/mp4"></video>
+      <video class="video" controls="controls" preload="metadata" style="width:50%;height:50%"> <source src="https://wizecosm.freeboxos.fr:59081/share/hOzPfr5kq5-PpQYD/An.Interview.With.God.2018.720p.BluRay.x264-%5BYTS.AM%5D.mp4" type="video/mp4"></video>
+      <video class="video" controls="controls" preload="metadata" style="width:50%;height:50%"> <source src="https://wizecosm.freeboxos.fr:59081/share/hOzPfr5kq5-PpQYD/An.Interview.With.God.2018.720p.BluRay.x264-%5BYTS.AM%5D.mp4" type="video/mp4"></video>
+      <video class="video" controls="controls" preload="metadata" style="width:50%;height:50%"> <source src="https://wizecosm.freeboxos.fr:59081/share/hOzPfr5kq5-PpQYD/An.Interview.With.God.2018.720p.BluRay.x264-%5BYTS.AM%5D.mp4" type="video/mp4"></video>
+      <video class="video" controls="controls" preload="metadata" style="width:50%;height:50%"> <source src="https://wizecosm.freeboxos.fr:59081/share/hOzPfr5kq5-PpQYD/An.Interview.With.God.2018.720p.BluRay.x264-%5BYTS.AM%5D.mp4" type="video/mp4"></video>
+      <!-- <video id="video" controls ="controls" preload="metadata" style="width:50%;height:50%"> <source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/mp4"><source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/webm"><track label="language one" kind="subtitles" srclang="en" src="Ehttps://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv/nglish [Forced].srt"></video>  
+      <video id="video" controls ="controls" preload="metadata" style="width:50%;height:50%"> <source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/mp4"><source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/webm"><track label="language one" kind="subtitles" srclang="en" src="Ehttps://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv/nglish [Forced].srt"></video>
+      <video id="video" controls ="controls" preload="metadata" style="width:50%;height:50%"> <source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/mp4"><source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/webm"><track label="language one" kind="subtitles" srclang="en" src="Ehttps://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv/nglish [Forced].srt"></video>
+      <video id="video" controls ="controls" preload="metadata" style="width:50%;height:50%"> <source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/mp4"><source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/webm"><track label="language one" kind="subtitles" srclang="en" src="Ehttps://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv/nglish [Forced].srt"></video>
+      <video id="video" controls ="controls" preload="metadata" style="width:50%;height:50%"> <source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/mp4"><source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/webm"><track label="language one" kind="subtitles" srclang="en" src="Ehttps://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv/nglish [Forced].srt"></video>  
+      <video id="video" controls ="controls" preload="metadata" style="width:50%;height:50%"> <source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/mp4"><source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/webm"><track label="language one" kind="subtitles" srclang="en" src="Ehttps://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv/nglish [Forced].srt"></video>
+      <video id="video" controls ="controls" preload="metadata" style="width:50%;height:50%"> <source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/mp4"><source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/webm"><track label="language one" kind="subtitles" srclang="en" src="Ehttps://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv/nglish [Forced].srt"></video>
+      <video id="video" controls ="controls" preload="metadata" style="width:50%;height:50%"> <source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/mp4"><source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/webm"><track label="language one" kind="subtitles" srclang="en" src="Ehttps://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv/nglish [Forced].srt"></video>
+      <video id="video" controls ="controls" preload="metadata" style="width:50%;height:50%"> <source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/mp4"><source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/webm"><track label="language one" kind="subtitles" srclang="en" src="Ehttps://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv/nglish [Forced].srt"></video>  
+      <video id="video" controls ="controls" preload="metadata" style="width:50%;height:50%"> <source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/mp4"><source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/webm"><track label="language one" kind="subtitles" srclang="en" src="Ehttps://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv/nglish [Forced].srt"></video>
+      <video id="video" controls ="controls" preload="metadata" style="width:50%;height:50%"> <source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/mp4"><source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/webm"><track label="language one" kind="subtitles" srclang="en" src="Ehttps://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv/nglish [Forced].srt"></video>
+      -->
+    </div>
+   </div>
+ </center>
+
+
+
     <!-- mp4 -->
-      <video width="320" height="240" controls>
-        <source src="assets/animation.mp4" type="video/mp4" />
-      </video>
-
-
-      <video id="video" controls preload="metadata" style="width:80%;height:80%">
-        <source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/mp4">
-        <source src="https://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv" type="video/webm">
-        <track label="language one" kind="subtitles" srclang="en" src="Ehttps://wizecosm.freeboxos.fr:59081/share/igEJ_vnstkWfwkTh/the.lord.of.the.rings.the.rings.of.power.s01e06.1080p.web.h264-glhf.mkv/nglish [Forced].srt">
-    </video>
+   
 </body>
 
 </html>
