@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../../../css/player/player.css">
+    <title>Embed Video Player</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <div class="videoPlayer">
+ 
+        <div class="topPlayer">
+        <!-- Du code ici pour mon lecteur ... -->
+        </div>
+ 
+        <div class="bottomPlayer">
+        <!-- Du code ici pour mon lecteur ... -->
+            <div class="affichage_soustitres" id="affichage_soustitres"></div>
+        </div>
+ 
+        <div class="menuOtionPlayer" id="menuOtionPlayerSettings">
+            <div class="menuSettings">
+            <!-- Du code ici pour mon lecteur ... -->
+            </div>
+        </div>
+ 
+        <div class="menuOtionPlayer" id="menuOtionPlayerAudioSubTitle">
+            <div class="menuSubTitleAudio">
+                <div class="menuBody">
+                    <div>
+                        <!-- Du code ici pour mon lecteur ... -->
+                    </div>
+                    <!-- Ici mon menu pour les sous titres ... -->
+                        <li class="subTitle">
+                            <div class="optionCategorie" id="subTitle">
+                                <span>Sous-Titres</span>
+                                <span class="optionValue" id="subTitleValue">Désactivé</span>
+                                <div class="iconMenu angleRightIcon"></div>
+                            </div>
+                            <ul class="optionList" id="optionListSubTitle">
+                                <li id="subtitle_Off">
+                                    <span>Désactivé</span>
+                                    <div class="iconMenu checkIcon"></div>
+                                </li>
+                                <li id="subtitle_Francais">
+                                    <span>Français</span>
+                                    <div class="iconMenu"></div>
+                                </li>
+                                <li id="subtitle_English">
+                                    <span>Anglais</span>
+                                    <div class="iconMenu"></div>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="media">
+            <video buffered controls preload="metadata" class="video">
+                    <!-- Ma video -->
+                <source src="<?= $lien_ep_source; ?>" type="video/mp4">
+                    <!-- Mes Sous Titres -->
+                <track kind="subtitles" srclang="fr" src="../../../SousTitre/Fr/mes-soustitres-fr.srt">
+                <track kind="subtitles" srclang="en" src="../../../SousTitre/En/mes-soustitres-en.srt">
+              <p>Votre navigateur ne supporte pas la vidéo HTML5. Veuillez mettre à jour votre navigateur !</p>
+            </video>
+        </div>
+    </div>
+        <!-- Mes Fichiers JS -->
+    <script src="../../../js/player/player.js"></script>
+    <script src="../../../js/player/player-settings.js"></script>
+    <script src="../../../js/player/player-audio.js"></script>
+</body>
+</html>
