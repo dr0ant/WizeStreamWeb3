@@ -1,78 +1,174 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="../../../css/player/player.css">
-    <title>Embed Video Player</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>WizeStream | Films</title>
+
+
+<script src="../js/slider.js"></script>     
+<!--Script Include js P1-->
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+
+<!--Script Include js P2-->
+<script> 
+$(function(){
+  $("#header").load("../header.html"); 
+  $("#footer").load("../footer.html"); 
+});
+</script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+
+<style>
+   
+
+.box{
+      width: 1200px;
+      border: white;
+      padding: 50px;
+      margin: 10px;
+      border-radius: 12px;
+      background: linear-gradient(-45deg, #012030, #000000, #012030, #000000);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      object-fit: cover;
+    } 
+
+
+
+.top-items{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  overflow-x: scroll;
+  
+
+
+}
+
+ .item{
+  padding: 10px;
+
+ }
+  
+
+  .title{
+    color:white;
+    font-size: large;
+    padding-bottom: 20px;
+    padding-top: 50px;
+
+  }
+
+
+
+
+</style>
+
+
 </head>
+
+
+
 <body>
-    <div class="videoPlayer">
- 
-        <div class="topPlayer">
-        <!-- Du code ici pour mon lecteur ... -->
-        </div>
- 
-        <div class="bottomPlayer">
-        <!-- Du code ici pour mon lecteur ... -->
-            <div class="affichage_soustitres" id="affichage_soustitres"></div>
-        </div>
- 
-        <div class="menuOtionPlayer" id="menuOtionPlayerSettings">
-            <div class="menuSettings">
-            <!-- Du code ici pour mon lecteur ... -->
-            </div>
-        </div>
- 
-        <div class="menuOtionPlayer" id="menuOtionPlayerAudioSubTitle">
-            <div class="menuSubTitleAudio">
-                <div class="menuBody">
-                    <div>
-                        <!-- Du code ici pour mon lecteur ... -->
-                    </div>
-                    <!-- Ici mon menu pour les sous titres ... -->
-                        <li class="subTitle">
-                            <div class="optionCategorie" id="subTitle">
-                                <span>Sous-Titres</span>
-                                <span class="optionValue" id="subTitleValue">Désactivé</span>
-                                <div class="iconMenu angleRightIcon"></div>
-                            </div>
-                            <ul class="optionList" id="optionListSubTitle">
-                                <li id="subtitle_Off">
-                                    <span>Désactivé</span>
-                                    <div class="iconMenu checkIcon"></div>
-                                </li>
-                                <li id="subtitle_Francais">
-                                    <span>Français</span>
-                                    <div class="iconMenu"></div>
-                                </li>
-                                <li id="subtitle_English">
-                                    <span>Anglais</span>
-                                    <div class="iconMenu"></div>
-                                </li>
-                            </ul>
-                        </li>
-                    </div>
-                </div>
-            </div>
-        </div>
- 
-        <div class="media">
-            <video buffered controls preload="metadata" class="video">
-                    <!-- Ma video -->
-                <source src="https://wizecosm.freeboxos.fr:59081/share/QjdmeS7kKi9CMgFu/Vesper.2022.1080p.WEBRip.x264.AAC5.1-%5BYTS.MX%5D.mp4" type="video/mp4">
-                    <!-- Mes Sous Titres -->
-                <track kind="subtitles" srclang="fr" src="https://wizecosm.freeboxos.fr:59081/share/a6ezmzuyFMge3xyD/Vesper_2022_French-ELSUBTITLE.COM-ST_68070639.srt">
-                <track kind="subtitles" srclang="en" src="../../../SousTitre/En/mes-soustitres-en.srt">
-              <p>Votre navigateur ne supporte pas la vidéo HTML5. Veuillez mettre à jour votre navigateur !</p>
-            </video>
-        </div>
+
+
+<!--     HEADER      -->
+<div id="header"></div>
+
+
+<!-- TOP FILMS  SERIES -->
+<center>
+ <div class="title"> TOP CONTENT </div>
+  <div class="box">
+    <div class="top-items">
+      <a class="item">
+        <video class="video" controls="controls" preload="metadata" style="width: 320px;height: 180px;">
+        <source src="https://wizecosm.freeboxos.fr:59081/share/ZeBNua9wGKaMxhhN/Medieval.2022.1080p.WEBRip.x264.AAC5.1-%5BYTS.MX%5D.mp4" type="video/mp4"> 
+      </a>
+      <a class="item">
+        <video class="video" controls="controls" preload="metadata" style="width: 320px;height: 180px;">
+        <source src="https://wizecosm.freeboxos.fr:59081/share/U5GYQMN-fOPLAT-f/The.Invitation.2022.1080p.WEBRip.x264.AAC5.1-%5BYTS.MX%5D.mp4 " type="video/mp4"> 
+      </a>
+      <a class="item">
+        <video class="video" controls="controls" preload="metadata" style="width: 320px;height: 180px;">
+        <source src="https://wizecosm.freeboxos.fr:59081/share/ZeBNua9wGKaMxhhN/Medieval.2022.1080p.WEBRip.x264.AAC5.1-%5BYTS.MX%5D.mp4" type="video/mp4"> 
+      </a>
+      <a class="item">
+        <video class="video" controls="controls" preload="metadata" style="width: 320px;height: 180px;">
+        <source src="https://wizecosm.freeboxos.fr:59081/share/sJKy1W99ZRHjvqxf/Thor.Love.And.Thunder.2022.1080p.WEBRip.x264.AAC5.1-%5BYTS.MX%5D.mp4" type="video/mp4"> 
+      </a>
+      <a class="item">
+        <video class="video" controls="controls" preload="metadata" style="width: 320px;height: 180px;">
+        <source src="https://wizecosm.freeboxos.fr:59081/share/ZeBNua9wGKaMxhhN/Medieval.2022.1080p.WEBRip.x264.AAC5.1-%5BYTS.MX%5D.mp4" type="video/mp4"> 
+      </a>
+      <a class="item">
+        <video class="video" controls="controls" preload="metadata" style="width: 320px;height: 180px;">
+        <source src="https://wizecosm.freeboxos.fr:59081/share/ZeBNua9wGKaMxhhN/Medieval.2022.1080p.WEBRip.x264.AAC5.1-%5BYTS.MX%5D.mp4" type="video/mp4"> 
+      </a>
+      <a class="item">
+        <video class="video" controls="controls" preload="metadata" style="width: 320px;height: 180px;">
+        <source src="https://wizecosm.freeboxos.fr:59081/share/ZeBNua9wGKaMxhhN/Medieval.2022.1080p.WEBRip.x264.AAC5.1-%5BYTS.MX%5D.mp4" type="video/mp4"> 
+      </a>
+      <a class="item">
+        <video class="video" controls="controls" preload="metadata" style="width: 320px;height: 180px;">
+        <source src="https://wizecosm.freeboxos.fr:59081/share/ZeBNua9wGKaMxhhN/Medieval.2022.1080p.WEBRip.x264.AAC5.1-%5BYTS.MX%5D.mp4" type="video/mp4"> 
+      </a>
+
+      
+<!--
+      <a class="item">
+        <video class="video" controls="controls" preload="metadata" style="width: 640px;height: 360px;">
+          <source src="https://wizecosm.freeboxos.fr:59081/share/ZeBNua9wGKaMxhhN/Medieval.2022.1080p.WEBRip.x264.AAC5.1-%5BYTS.MX%5D.mp4" type="video/mp4"> 
+          <h1>
+            Medival
+          </h1>
+       </video>
+      </a>
+
+      <a class="item">
+        <video class="video" controls="controls" preload="metadata" style="width: 640px;height: 360px;">
+          <source src="https://wizecosm.freeboxos.fr:59081/share/BWyQ2r0hFdFB3gcx/Mortal.Kombat.Legends.Snow.Blind.2022.1080p.BluRay.x264.AAC5.1-%5BYTS.MX%5D.mp4" type="video/mp4"> 
+          <h1>
+            Mortal Conbat
+          </h1>
+       </video>
+      </a>
+
+      <a class="item">
+        <video class="video" controls="controls" preload="metadata" style="width: 640px;height: 360px;">
+          <source src="https://wizecosm.freeboxos.fr:59081/share/U5GYQMN-fOPLAT-f/The.Invitation.2022.1080p.WEBRip.x264.AAC5.1-%5BYTS.MX%5D.mp4 " type="video/mp4"> 
+          <h1>
+            The invitation 
+          </h1>
+       </video>
+      </a>
+
+      <a class="item">
+        <video class="video" controls="controls" preload="metadata" style="width: 640px;height: 360px;">
+          <source src="https://wizecosm.freeboxos.fr:59081/share/ZeBNua9wGKaMxhhN/Medieval.2022.1080p.WEBRip.x264.AAC5.1-%5BYTS.MX%5D.mp4 " type="video/mp4"> 
+          <h1>
+            Medival
+          </h1>
+       </video>
+      </a>
+-->
     </div>
-        <!-- Mes Fichiers JS -->
-    <script src="../../../js/player/player.js"></script>
-    <script src="../../../js/player/player-settings.js"></script>
-    <script src="../../../js/player/player-audio.js"></script>
+  </div>
+</center>
+
+
+    <!-- mp4 -->
+   
 </body>
+
 </html>
